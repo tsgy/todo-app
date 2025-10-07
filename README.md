@@ -7,6 +7,7 @@
 ---
 
 ## 構成図
+```
 todo-app/
 ├── backend/ # Node.js + Express サーバ
 │ ├── src/ # APIルート、コントローラ
@@ -25,6 +26,7 @@ todo-app/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
 
 ---
 ## セットアップ手順
@@ -33,31 +35,50 @@ todo-app/
 ```bash
 git clone git@github.com:tsgy/todo-app.git
 cd todo-app
-###2. 依存関係インストール
+```
+### 2. 依存関係インストール
+```bash
 cd backend && npm install
 cd ../frontend && npm install
-###3. 環境変数設定
+```
+
+### 3. 環境変数設定
 ルートまたは各ディレクトリに .env を作成し、MySQL接続情報を設定します。
+```env
 DATABASE_URL="mysql://user:password@localhost:3306/todo_app"
-###4. DBマイグレーション
+```
+
+### 4. DBマイグレーション
+```bash
 cd backend
 npx prisma migrate dev --name init
-###5. 開発サーバ起動
+```
+
+### 5. 開発サーバ起動
 ルートに戻り：
+```bash
 npm run dev
+```
 同時にフロントエンドとバックエンドが起動します。
 
 ## 主な機能
-タスクの作成／削除／完了管理
-フロント⇄バック間のAPI通信
-Prisma ORMによるスキーマ管理
-concurrently + nodemon による同時開発環境
+- タスクの作成／削除／完了管理
+- フロント⇄バック間のAPI通信
+- Prisma ORMによるスキーマ管理
+- concurrently + nodemon による同時開発環境
 
-##スクリーンショット
+## スクリーンショット
 以下は開発中UIの例です。
 
 ## 技術
-React / Vite / Node.js / Express / Prisma / MySQL / macOS / VSCode
+- React / Vite / Node.js / Express / Prisma / MySQL / macOS / VSCode
+
 ## ライセンス
 MIT License © 2025 tsgy
-EOF
+---
+この内容を現在の `README.md` に上書き保存し、  
+```bash
+git add README.md
+git commit -m "docs: fix markdown structure"
+git push
+```
