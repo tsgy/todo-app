@@ -69,16 +69,11 @@ npm run dev
 
 ## スクリーンショット
 以下は開発中UIの例です。
+![alt text](<スクリーンショット 2025-10-07 18.31.33.png>)
 
 ## 技術
 - React / Vite / Node.js / Express / Prisma / MySQL / macOS / VSCode
 
 ## ライセンス
+
 MIT License © 2025 tsgy
----
-この内容を現在の `README.md` に上書き保存し、  
-```bash
-git add README.md
-git commit -m "docs: fix markdown structure"
-git push
-```
