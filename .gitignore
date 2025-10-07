@@ -4,4 +4,5 @@ node_modules/
 .DS_Store
 /backend/.env
 /frontend/.env
-/prisma/dev.db
+/prisma/dev.db.DS_Store
+node_modules/
